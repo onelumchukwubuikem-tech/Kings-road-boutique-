@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kings Road Boutique | Asaba's Finest</title>
+    <style>
+        :root {
+            --primary-bg: #0a0a0a;
+            --accent: #ffffff;
+            --text-muted: #888;
+            --card-bg: #161616;
+        }
+
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+
+        body { background-color: var(--primary-bg); color: var(--accent); line-height: 1.6; }
+
+        /* Header */
+        header { padding: 20px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid #222; position: sticky; top: 0; background: rgba(10,10,10,0.9); z-index: 100; }
+        .logo { font-weight: 800; font-size: 1.2rem; letter-spacing: 2px; }
+
+        /* Hero Section */
+        .hero { height: 80vh; display: flex; flex-direction: column; justify-content: center; align-items: center; text-align: center; padding: 20px; background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1000&q=80'); background-size: cover; background-position: center; }
+        .hero h1 { font-size: 3.5rem; margin-bottom: 10px; line-height: 1; }
+        .hero p { color: var(--text-muted); font-size: 1.1rem; max-width: 500px; margin-bottom: 30px; }
+        .cta-btn { background: var(--accent); color: #000; padding: 15px 40px; text-decoration: none; font-weight: bold; border-radius: 5px; transition: 0.3s; }
+        .cta-btn:hover { opacity: 0.8; transform: scale(1.05); }
+
+        /* Featured Collection */
+        .section-title { padding: 60px 20px 20px; text-align: center; font-size: 1.5rem; text-transform: uppercase; letter-spacing: 3px; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 20px; padding: 20px; max-width: 1200px; margin: auto; }
+        .card { background: var(--card-bg); border-radius: 10px; overflow: hidden; border: 1px solid #333; }
+        .card img { width: 100%; height: 350px; object-fit: cover; }
+        .card-info { padding: 15px; }
+        .price { color: #4CAF50; font-weight: bold; }
+
+        /* Contact/Footer */
+        footer { padding: 60px 20px; background: #000; text-align: center; border-top: 1px solid #222; }
+        .address { color: var(--text-muted); margin-bottom: 20px; }
+        .whatsapp-float { color: #25d366; text-decoration: none; font-size: 1.2rem; font-weight: bold; }
+
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">KINGS ROAD</div>
+        <nav>Collection | Location</nav>
+    </header>
+
+    <section class="hero">
+        <h1>UNMATCHED<br>STREETWEAR</h1>
+        <p>Asaba's premier destination for high-end urban fashion. Elevate your presence today.</p>
+        <a href="https://wa.me/2349121692709" class="cta-btn">SHOP ON WHATSAPP</a>
+    </section>
+
+    <h2 class="section-title">New Arrivals</h2>
+    <div class="grid">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1556821840-3a63f95609a7?auto=format&fit=crop&w=500&q=80" alt="Hoodie">
+            <div class="card-info">
+                <h3>Premium Heavy Hoodie</h3>
+                <p class="price">₦ 25,000</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=500&q=80" alt="Tee">
+            <div class="card-info">
+                <h3>Urban Essential Tee</h3>
+                <p class="price">₦ 12,500</p>
+            </div>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=500&q=80" alt="Shoes">
+            <div class="card-info">
+                <h3>Vanguard Sneakers</h3>
+                <p class="price">₦ 45,000</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p class="address">M11eleven Supermarket Opp Blackjunction,<br>Okpanam Rd, Asaba 320001, Delta</p>
+        <a href="https://wa.me/2349121692709" class="whatsapp-float">Chat with us: +234 912 169 2709</a>
+        <p style="margin-top: 30px; font-size: 0.8rem; color: #444;">© 2026 Kings Road Boutique. Built by David Designs.</p>
+    </footer>
+
+</body>
+</html>
